@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import RonaParty from './RonaParty.js';
+import RonaParty from './RonaParty';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

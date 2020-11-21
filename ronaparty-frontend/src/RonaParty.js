@@ -8,15 +8,10 @@ function RonaParty() {
   return (
     <div className="wrapper">
       <Header />
-
-
       <main className="GameFrame">
-
         <Game />
         <Scoreboard />
       </main>
-
-
     </div>
   );
 }
