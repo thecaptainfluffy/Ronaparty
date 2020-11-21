@@ -17,6 +17,5 @@
   margin: auto;
   width: 40%;
   font-size: 25px;
-  font-family: 'Stalinist One', cursive;
-  color: #373b32;
+  text-shadow: var(--text-shadow);
 }

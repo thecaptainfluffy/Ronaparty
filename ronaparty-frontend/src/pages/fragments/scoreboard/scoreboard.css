@@ -1,31 +1,20 @@
 
-.scoreboard {
+#scoreboardWrapper {
+  text-align: center;
   width: 25%;
   max-height: 550px;
   overflow-y: scroll;
-  background-color: #c1c1c1;
-  border: 2px solid black;
   margin: auto;
+  background-image: var(--scoreboard-background);
+  border: var(--border);
+  text-shadow: var(--text-shadow);
+  padding: 15px;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 3px;
+#scoreboardHeader {
+  text-decoration: underline;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
+#scores {
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #8cff00;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #8cff00;
 }
