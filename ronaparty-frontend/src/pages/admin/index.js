@@ -1,13 +1,15 @@
+import { useState } from 'react';
 import './admin.css';
 
-function AdminTools() {
+function Admin() {
+
+  const [buttonLabel, setButtonLabel] = useState("Start game");
+
   return (
-    <div className="wrapper">
-    
-
-
+    <div id="admin">
+      <button className="admin" onClick={() => setButtonLabel("Next game")}>{buttonLabel}</button>
     </div>
   );
 }
 
-export default AdminTools;
+export default Admin;

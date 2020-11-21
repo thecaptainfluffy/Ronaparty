@@ -13,6 +13,7 @@ function Game() {
   useEffect(() => {
     const subscriber = database;
     subscriber.ref('flappybird').on("child_added", snapshot => {
+      console.log(snapshot);
       setCount(snapshot.val());
     })
     return () => subscriber;
