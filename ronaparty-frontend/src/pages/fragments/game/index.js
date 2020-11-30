@@ -3,6 +3,7 @@ import './game.css';
 import firebase from "firebase";
 import "firebase/auth";
 import "firebase/database";
+import GameCanvasFlappyFriends from '../game-flappyFriends/game-canvas-flappy-friends'
 const auth = firebase.auth();
 const database = firebase.database();
 
@@ -27,10 +28,9 @@ function handleButtonClick() {
 
   return (
     <div class="theGame">
-      <h1>This is the game</h1>
-      <h2>{count}</h2>
-      <button onClick={() => handleButtonClick()}>Click here motherfuckah!</button>
+      <GameCanvasFlappyFriends />
     </div>
+    
   );
 }
 
