@@ -6,25 +6,37 @@ import Header from './pages/fragments/header';
 import Game from './pages/fragments/game';
 import Scoreboard from './pages/fragments/scoreboard';
 import Admin from './pages/admin';
+import Sandbox from './pages/sandbox'
+import GuestRegister from './pages/guest-register/guest-register'
 
 function RonaParty() {
   return (
     <div className="wrapper">
-     
-      <Header />
-      <main className="GameFrame">
+      
       <Router>
       <Switch>
           <Route path="/admin">
             <Admin />
           </Route>
+          <Route path="/sandbox">
+            <Sandbox />
+          </Route>
+          <Route path="/guest-register">
+            <GuestRegister />
+          </Route>
+
           <Route path="/">
-            <Game />
-            <Scoreboard />
+          <Header />
+            <main className="gameWrapper">
+              <section id="gameView">
+                <Game />
+                <Scoreboard />
+              </section>
+            </main>
           </Route>
         </Switch>
         </Router>
-        </main>
+        
     </div>
   );
 }

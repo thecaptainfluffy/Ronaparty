@@ -8,6 +8,7 @@
 
 
 import Canvas from './canvas'
+import './game-canvas-flappy-friends.css'
 
 
 
@@ -19,8 +20,6 @@ function GameCanvasFlappyFriends() {
 
   function gameLoop(ctx, frameCount) {
     let random = Math.floor(Math.random() * 800) + 1;
-    let random1 = Math.floor(Math.random() * 60) + 1;
-    let random2 = Math.floor(Math.random() * 200) + 1;
     speed1--
     speed--
     if(speed === -40){
@@ -37,12 +36,12 @@ function GameCanvasFlappyFriends() {
     ctx.arc(50, 100, 20*Math.sin(frameCount*0.001)**2, 0, 2*Math.PI)
     ctx.fill()
 
-    ctx.fillRect( random, 40, 40, 40)
+    ctx.fillRect( random, 50, 40, 40)
     ctx.fillStyle = '#00ff00'
-    ctx.fillRect( speed, 200, 40, 40)
+    ctx.fillRect( speed, 20, 40, 40)
     ctx.fillStyle = '#ff00ff'
-    ctx.fillRect( speed, speed1, 40, 40)
-    ctx.fillStyle = '#0fff'
+    ctx.fillRect( speed, speed1, 80, 40)
+    ctx.fillStyle = '#0fffff'
     ctx.fillRect( speed, speed1, 40, 40)
     ctx.fillStyle = '#ff0f0f'
     ctx.fillRect( speed1, speed, 40, 40)
